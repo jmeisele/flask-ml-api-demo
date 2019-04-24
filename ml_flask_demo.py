@@ -8,7 +8,7 @@ import numpy as np
 from flask import Flask, abort, jsonify, request
 import pickle
 
-my_random_forest = pickle.load(open("C:/Users/EISELJA/desktop/JupyterNotebooks/iris_rfc.pkl", 'rb'))
+my_random_forest = pickle.load(open("iris_rfc.pkl", 'rb'))
 
 app = Flask(__name__)
 
