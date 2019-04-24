@@ -12,6 +12,10 @@ my_random_forest = pickle.load(open("iris_rfc.pkl", 'rb'))
 
 app = Flask(__name__)
 
+@app.route('/home', methods = ['GET'])
+def home():
+    return "Hey Curtis"
+
 @app.route('/api', methods = ['POST'])
 def make_predict():
     #######all kinds of error checking should go here#######
