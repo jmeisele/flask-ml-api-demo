@@ -14,19 +14,21 @@ app = Flask(__name__)
 
 @app.route('/home', methods = ['GET'])
 def home():
-    return "Hey Curtis"
+    return "Hey Birmingham Data Meetup"
 
-@app.route('/api', methods = ['POST'])
+@app.route('/ml_api', methods = ['POST'])
 def make_predict():
     #######all kinds of error checking should go here#######
     data = request.get_json(force = True)
-    #convert our json to a numpy array
+    #Parse our request json into a list of values
     predict_request = [data['sl'], data['sw'], data['pl'], data['pw']]
+    #Convert our list to a numpy array
     predict_request = np.array(predict_request)
+    #Reshape into 1d array
     predict_request = predict_request.reshape(1, -1)
-    #numpy array goes into random forest, prediction comes out
+    #Assign prediction value to y_hat
     y_hat = my_random_forest.predict(predict_request)
-    #return our prediction
+    #Return our prediction to the user
     output = {'y_hat': str([y_hat[0]])}
     return  jsonify(results = output)
 
