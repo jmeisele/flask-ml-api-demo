@@ -15,4 +15,6 @@ From the command Line:
 - python jupyter-notebook
 
 After pickling RandomForest model in notebook:
+From the command line:
+- conda activate ml_demo
 - python ml_flask_demo.py
