@@ -5,7 +5,7 @@ Simple Machine Learning deployment to localhost via flask and Jupyter Notebook
 From the command Line:
 - git clone https://github.com/jmeisele/ml_demo.git
 - cd ml_demo
-- conda env -f environment.yml
+- conda env create -f environment.yml
 
 - conda create -n ml_demo python=3.7.0
 - conda activate ml_demo
