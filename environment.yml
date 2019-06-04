@@ -1,4 +1,4 @@
-name: machine_demo2
+name: ml_demo
 channels:
   - intel
   - anaconda
@@ -104,5 +104,5 @@ dependencies:
   - winpty=0.4.3=4
   - zeromq=4.3.1=h33f27b4_3
   - zlib=1.2.11=h62dcd97_3
-prefix: C:\Users\eiselja\.conda\envs\machine_demo2
+prefix: C:\Users\eiselja\.conda\envs\ml_demo
 
