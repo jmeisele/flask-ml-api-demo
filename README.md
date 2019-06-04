@@ -6,13 +6,7 @@ From the command Line:
 - git clone https://github.com/jmeisele/ml_demo.git
 - cd ml_demo
 - conda env create -f environment.yml
-
-- conda create -n ml_demo python=3.7.0
-- conda activate ml_demo
-- conda env -f environment.yml
-- pip install -r requirements.txt
-
-- python jupyter-notebook
+- jupyter-notebook
 
 After pickling RandomForest model in notebook:
 From the command line:
